@@ -1,6 +1,6 @@
 {
   "name": "@originaryx/agent-auditor",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Inspect and verify signed agent receipts and evidence bundles",
   "type": "module",
   "files": [
@@ -32,7 +32,7 @@
     "url": "https://github.com/originaryx/agent-auditor.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/originaryx/agent-auditor#readme",
+  "homepage": "https://www.originary.xyz/agent-auditor",
   "bugs": {
     "url": "https://github.com/originaryx/agent-auditor/issues"
   },
@@ -44,7 +44,8 @@
     "inspect",
     "cryptography",
     "ed25519",
-    "peac"
+    "peac",
+    "originary"
   ],
   "engines": {
     "node": ">=22.0.0"
