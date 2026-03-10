@@ -6,9 +6,9 @@
  */
 
 import { readDisputeBundle } from '@peac/audit';
-import type { BundleReadResult } from '@originaryx/agent-auditor-core';
+import type { BundleReadOutcome } from '@originaryx/agent-auditor-core';
 
-export async function readBundle(data: Buffer): Promise<BundleReadResult> {
+export async function readBundle(data: Buffer): Promise<BundleReadOutcome> {
   const result = await readDisputeBundle(data);
 
   if (!result.ok) {
@@ -33,9 +33,9 @@ export async function readBundle(data: Buffer): Promise<BundleReadResult> {
 
   return {
     ok: true,
-    manifest: bundle.manifest as Record<string, unknown>,
+    manifest: bundle.manifest as unknown as Record<string, unknown>,
     receipts,
-    keys: keys as Record<string, unknown>,
+    keys: keys as unknown as Record<string, unknown>,
     files: ['manifest.json', 'receipts.ndjson', 'keys/keys.json'],
   };
 }
