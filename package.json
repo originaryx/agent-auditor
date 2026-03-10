@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "agent-auditor-workspace",
+  "description": "Agent Auditor: inspect and verify signed agent receipts and evidence bundles",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "dev": "pnpm --filter @originaryx/agent-auditor-web dev",
+    "test:e2e": "node scripts/test-web.mjs",
+    "test:smoke:web": "node scripts/test-web.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

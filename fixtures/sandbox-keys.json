@@ -1,0 +1,11 @@
+{
+  "description": "Public keys for spike fixtures (no private keys in repo)",
+  "correctKey": {
+    "kid": "spike-key-001",
+    "publicKey": "c_bPpQMV98uOcdx5u7jaKi6-KXkeR0_VqjbHMv338Sc"
+  },
+  "wrongKey": {
+    "kid": "spike-wrong-key",
+    "publicKey": "gaZ_TriTufIrs8OBGQBy3jMBV-rOZvNF3eXZBV-ZJKk"
+  }
+}

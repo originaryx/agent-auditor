@@ -1,0 +1,52 @@
+{
+  "name": "@originaryx/agent-auditor",
+  "version": "0.1.0",
+  "description": "Inspect and verify signed agent receipts and evidence bundles",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "agent-auditor": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@originaryx/agent-auditor-core": "workspace:*",
+    "@peac/audit": "^0.12.0",
+    "commander": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/originaryx/agent-auditor.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/originaryx/agent-auditor#readme",
+  "bugs": {
+    "url": "https://github.com/originaryx/agent-auditor/issues"
+  },
+  "keywords": [
+    "agent",
+    "auditor",
+    "receipt",
+    "verify",
+    "inspect",
+    "cryptography",
+    "ed25519",
+    "peac"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

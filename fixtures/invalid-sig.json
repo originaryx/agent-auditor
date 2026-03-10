@@ -1,0 +1,9 @@
+{
+  "description": "Wire 0.2 receipt verified with wrong public key (signature mismatch)",
+  "jws": "eyJ0eXAiOiJpbnRlcmFjdGlvbi1yZWNvcmQrand0IiwiYWxnIjoiRWREU0EiLCJraWQiOiJzcGlrZS1rZXktMDAxIn0.eyJwZWFjX3ZlcnNpb24iOiIwLjIiLCJraW5kIjoiZXZpZGVuY2UiLCJ0eXBlIjoib3JnLnBlYWNwcm90b2NvbC9hY2Nlc3MiLCJpc3MiOiJodHRwczovL2RlbW8ucGVhY3Byb3RvY29sLm9yZyIsImlhdCI6MTc3MzEwMjMzNSwianRpIjoiMDE5Y2Q1MjItODRkMC03MTM1LWFmNGUtNTI5Y2YzZmZiOWExIiwic3ViIjoiaHR0cHM6Ly9hcGkuZXhhbXBsZS5jb20vcmVzb3VyY2UvOTkiLCJwaWxsYXJzIjpbImFjY2VzcyJdfQ.M5Q9cZgavIV_TM4mnqCb22jV_Jtg4AhYhfzb_ot5EKlVWG66G_gvW8g_8cPLuv2G-NorQKXJ2G9LGUklO-IUAw",
+  "publicKey": "gaZ_TriTufIrs8OBGQBy3jMBV-rOZvNF3eXZBV-ZJKk",
+  "correctPublicKey": "c_bPpQMV98uOcdx5u7jaKi6-KXkeR0_VqjbHMv338Sc",
+  "kid": "spike-key-001",
+  "expectedValid": false,
+  "expectedErrorCode": "E_INVALID_SIGNATURE"
+}
